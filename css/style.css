@@ -131,9 +131,9 @@ header .logo {
 /* about-app-section */
 
 .about-app-section {
-    padding: 0px 80px 40px 40px;
+    padding: 40px 20px 60px 20px;
     display: flex;
-    align-items: flex-start; /* skroz gore */
+    align-items: flex-start;
     justify-content: center;
     height: auto;
 }
@@ -200,29 +200,254 @@ header .logo {
 
 .about-app-image {
     flex: 1;
-    min-width: 400px;
     text-align: center;
-    padding-left: 100px;
+    padding-left: 50px;
 }
 
 .about-app-image img {
-    width: 100%;
-    border-radius: 0px;
+    width: 600px;
+    border-radius: 1px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button-inline {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6188a8;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+}
+
+.cta-button-inline:hover {
+    background-color: #6c97bb;
+    transform: scale(1.05);
 }
 
 /* end about-app-section */
 
+/* app-interface */
+
+.app-interface {
+    padding: 40px 20px 60px 20px;
+}
+
+.app-interface h2 {
+    font-size: 39px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #222;
+}
+
+.screenshot-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+  
+.screenshot-stack img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 1px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: none;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay span {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+#prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+/* end app-interface */
+
+/* app-download */
+
+.app-download {
+    padding: 40px 20px 60px 20px;
+    text-align: center;
+}
+
+.app-download h2 {
+    font-size: 32px;
+    color: #222;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6188a8;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 26px;
+}
+
+.download-button:hover {
+    background-color: #6c97bb;
+    transform: scale(1.05);
+}
+
+.download-button i {
+    margin-right: 8px;
+}
+
+/* end app-download */
+
+/* customer-service */
+
+
+.customer-service {
+    padding: 40px 20px 60px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.customer-service h2 {
+    font-size: 32px;
+    color: #222;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.customer-service p {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.customer-service a {
+    color: #6188a8; /* Boja linkova */
+}
+
+.customer-service a:hover, .customer-service a:focus {
+    color: #6c97bb;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.contact-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.contact-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contact-item p {
+    color: var(--text-dark);
+    font-size: 16px;
+}
+
+/* end customer-service */
+
+/* partners-section */
+
+.partners-section {
+    padding: 40px 20px 60px 20px;
+    text-align: center;
+  }
+  
+  .partners-section h2 {
+    font-size: 32px;
+    color: #222;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .partners-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .partner-logo {
+    max-width: 150px;
+    height: auto;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .partner-logo:hover {
+    transform: scale(1.05);
+}
+
+a{
+    text-decoration: none; 
+    border: none;
+}
+
+/* end partners-section */
+
 /* site-footer */
 
 .site-footer {
-    background-color: #000000; /* ili neka druga neutralna */
-    padding: 20px 0;           /* razmak gore/dole */
-    text-align: center;        /* centriranje teksta */
+    background-color: #000000;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .site-footer p {
-    margin: 0;                 /* resetuj marginu ako treba */
+    margin: 0;
     font-size: 16px;
     color: #ffffff;
 }

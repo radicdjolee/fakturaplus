@@ -19,9 +19,9 @@
         </a>
         <nav class="nav-links">
             <a href="#app">O aplikaciji</a>
-            <a href="#interfejs">Interfejs</a>
+            <a href="#izgled">Izgled</a>
             <a href="#preuzmi">Preuzmi</a>
-            <a href="#kontakt">Kontakt</a>
+            <a href="#korisnickiservis">Korisnički servis</a>
         </nav>
     </header>
     
@@ -70,17 +70,62 @@
               <div class="about-app-image">
                 <img src="images/sc1.png" alt="Prikaz aplikacije Faktura Plus">
               </div>
+
+			  <a href="#korisnickiservis" class="cta-button-inline">👉 Kontaktirajte nas za besplatnu probu!</a>
             </div>
-          </section>
+        </section>
 
-          <section id="Interfejs" class="app-interface">
-            
-          </section>
+		<section id="izgled" class="app-interface">
+			<h2>Izgled Faktura Plus aplikacije</h2>
+            <div class="screenshot-stack">
+				<img src="images/sc5.png" alt="Screenshot 5" onclick="enlargeImage(this)" />
+              	<img src="images/sc1.png" alt="Screenshot 1" onclick="enlargeImage(this)" />
+              	<img src="images/sc2.png" alt="Screenshot 2" onclick="enlargeImage(this)" />
+              	<img src="images/sc3.png" alt="Screenshot 3" onclick="enlargeImage(this)" />
+              	<img src="images/sc4.png" alt="Screenshot 4" onclick="enlargeImage(this)" />
+            </div>
+		</section>
 
+		<div class="overlay" onclick="closeImage()">
+            <span id="prev" onclick="changeImage(-1)">&#10094;</span>
+            <span id="next" onclick="changeImage(1)">&#10095;</span>
+            <img class="enlarged-image" onclick="event.stopPropagation();">
+        </div>
+		  
+		<section id="preuzmi" class="app-download">
+			<h2>Preuzmi aplikaciju</h2>
+			<a href="https://fakturaplus.azurewebsites.net/" class="download-button" target="_blank" rel="noopener noreferrer">
+				<i class="fa-solid fa-download"></i> Preuzmi
+			</a>
+		</section>
+
+		<section id="korisnickiservis" class="customer-service">
+			<h2>Korisnički servis</h2>
+			<div class="contact-info">
+				<div class="contact-item">
+					<h3>Telefon:</h3>
+					<p><a href="tel:+381658855385">+381 65 88 55 385</a></p>
+				</div>
+				<div class="contact-item">
+					<h3>Email:</h3>
+					<p><a href="mailto:fakturaplus.info@gmail.com">fakturaplus.info@gmail.com</a></p>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners-section">
+			<h2>Klijenti koji koriste Faktura Plus</h2>
+			<p>Ovo su neki od naših zadovoljnih korisnika iz različitih delatnosti.</p>
+			<a href="https://www.prplaster.com/" target="_blank">
+                <img src="images/prplaster_logo.PNG" alt="Logo Partnera 1" class="partner-logo">
+            </a>
+		</section>
+		
     </main>
     
     <footer class="site-footer">
         <p>&copy; 2025 Faktura Plus. All rights reserved.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
